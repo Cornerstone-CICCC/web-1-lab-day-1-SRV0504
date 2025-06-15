@@ -1,4 +1,82 @@
-main,
-footer {
-  display: flex;
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #0e2c7d;
+    text-align: center;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: yellow;
+    padding: 10px;
+    float: left;
+    width: 100px;
+    height: 1225px;
+}
+
+.content {
+    background-color: #00ffff;
+    margin-left: 120px;
+    padding: 20px;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+h2 {
+    color: rgb(9, 9, 9);
+    font-weight: bold;
+}
+
+#about + p {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0); 
+}
+
+#services + p {
+    color: white;
+    background-color: green;
+}
+
+#contact ~ ul a {
+    color: rgb(165, 0, 0);
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div:first-child { 
+    background-color: rgb(248, 186, 224);
+    padding: 10px; 
+    color: black;
+}
+
+footer div:nth-child(2) {               background-color: rgb(181, 24, 24); 
+    color: white;
+    padding: 10px;
+}
+
+footer div:last-child { 
+    background-color: grey; 
+    padding: 10px;
+    color: black;
+
+}
+
+
+
